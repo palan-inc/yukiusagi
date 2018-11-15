@@ -670,3 +670,61 @@ input[type="radio"]:checked + label::after {
     border-radius: 4px;
     margin: 0 auto 20px;
 }
+
+
+.foot-pager,
+.head-pager {
+    text-align: right;
+}
+
+.foot-pager {
+    margin: 10px 0 0;
+}
+
+.foot-pager li,
+.head-pager li {
+    display: inline;
+}
+
+.foot-pager li,
+.head-pager li .fas {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    background: #efefef;
+    font-size: 10px;
+    margin: 0 3px;
+    color: #aaa;
+}
+
+.foot-pager li {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    color: #000;
+}
+
+.foot-pager li.period {
+    background: none;
+    margin: 0 5px;
+    color: #aaa;
+}
+
+.foot-pager li.now {
+    background: #CDB1FB;
+    color: #fff;
+}
+
+.head-pager li .now {
+    font-size: 22px;
+    margin: 0 3px;
+}
+
+.head-pager li .all {
+    margin: 0 3px;
+    font-size: 15px;
+}
