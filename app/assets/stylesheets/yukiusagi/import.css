@@ -677,6 +677,10 @@ input[type="radio"]:checked + label::after {
     text-align: right;
 }
 
+.head-pager {
+  margin: -10px 0 -25px;
+}
+
 .foot-pager {
     margin: 10px 0 0;
 }
