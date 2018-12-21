@@ -313,14 +313,18 @@ table {
   margin-bottom: 30px;
   color: #fff;
   position: relative; }
+  .yu-alert .fa-times {
+    color: #fff; }
 
 /* 閉じるボタン */
 .fa-times {
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 15px;
+  top: 8px;
   cursor: pointer;
-  transition: .3s; }
+  transition: .3s;
+  z-index: 10;
+  color: #aaa; }
   .fa-times:hover {
     opacity: .5; }
 
@@ -494,6 +498,7 @@ aside {
       background: #F5F5F5;
       position: relative;
       cursor: pointer;
+      transition: all .3s;
       /* アイコン */ }
       aside ul li:first-child {
         border-top: 1px solid #fff; }
@@ -507,10 +512,15 @@ aside {
         line-height: 1;
         font-size: 10px;
         margin-right: 8px;
-        color: #ccc;
+        color: #aaa;
         position: absolute;
         right: 10px;
-        top: 15px; }
+        top: 15px;
+        transition: .3s; }
+      aside ul li:hover {
+        background: #feeff1; }
+        aside ul li:hover::after {
+          transform: rotate(90deg); }
       aside ul li i {
         font-size: 18px;
         margin-right: 8px;
@@ -533,6 +543,8 @@ aside {
         color: #dfdfdf; }
       aside ul.yu-sub li::after {
         display: none; }
+      aside ul.yu-sub li:hover {
+        background: #feeff1; }
 
 /*-------------------------------
 	MAIN - メインコンテンツ
@@ -546,6 +558,7 @@ main {
   /* 3BOX */
   /* 4BOX */ }
   main .yu-box {
+    position: relative;
     display: block;
     background: #fff;
     box-shadow: 0 0 15px rgba(120, 120, 120, 0.1);

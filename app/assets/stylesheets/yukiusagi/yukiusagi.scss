@@ -390,15 +390,20 @@ table {
     margin-bottom: 30px;
     color: #fff;
     position: relative;
+    .fa-times {
+      color: #fff;
+    }
 }
 
 /* 閉じるボタン */
 .fa-times {
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 15px;
+    top: 8px;
     cursor: pointer;
     transition: .3s;
+    z-index: 10;  
+    color: #aaa;
     &:hover {
         opacity: .5;
     }
@@ -612,15 +617,23 @@ aside {
             background: #F5F5F5;
             position: relative;
             cursor: pointer;
+            transition: all .3s;
             &::after {
                 @include FontAwesome("\f054");
                 line-height: 1;
                 font-size: 10px;
                 margin-right: 8px;
-                color: #ccc;  
+                color: #aaa;  
                 position: absolute;
                 right: 10px;
                 top: 15px;
+                transition: .3s;
+            }
+            &:hover {
+                background: lighten($COLOR_LIGHT_PINK, 19%);
+                &::after {
+                    transform: rotate(90deg);
+                }
             }
             /* アイコン */
             i {
@@ -645,6 +658,9 @@ aside {
                     color: #dfdfdf;
                 }
                 &::after { display: none; }
+                &:hover {
+                    background: lighten($COLOR_LIGHT_PINK, 19%);
+                }
             }
         }
     }
@@ -661,6 +677,7 @@ main {
     
     /* 親要素 */
     .yu-box {
+        position: relative;
         display: block;
         background: #fff;
         box-shadow: 0 0 15px rgba(120,120,120,0.1);
