@@ -55,6 +55,36 @@ $FONT_DEFAULT: 'Noto Sans JP', sans-serif;
     content: '';
 }
 
+/*-------------------------------
+	ANIMATION
+-------------------------------*/
+.yu-wobble {
+    display: inline-block;
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+    &:hover {
+      -webkit-animation: tremble .4s ease-in-out;
+      animation: tremble .4s ease-in-out;
+    }
+}
+
+@-webkit-keyframes tremble {
+  15% { -webkit-transform: translateX(3px) rotate(1deg); }
+  30% { -webkit-transform: translateX(-3px) rotate(-1deg); }
+  45% { -webkit-transform: translateX(2px) rotate(1deg); }
+  60% { -webkit-transform: translateX(-2px) rotate(-1deg); }
+  75% { -webkit-transform: translateX(1px) rotate(1deg); }
+  90% { -webkit-transform: translateX(-1px) rotate(-1deg); }
+}
+@keyframes tremble {
+  15% { transform: translateX(3px) rotate(1deg); }
+  30% { transform: translateX(-3px) rotate(-1deg); }
+  45% { transform: translateX(2px) rotate(1deg); }
+  60% { transform: translateX(-2px) rotate(-1deg); }
+  75% { transform: translateX(1px) rotate(1deg); }
+  90% { transform: translateX(-1px) rotate(-1deg); }
+}
+
 
 /*-------------------------------
 	DEFAULT
@@ -130,6 +160,13 @@ input[type=button] {
     position: relative;
     top: -2px;
     outline: none;
+    cursor: pointer;
+    &:hover {
+        top: -1px;
+    }
+    &:active {
+        top: 0;
+    }
     &:disabled {
         opacity: .4;
     }
@@ -140,6 +177,12 @@ input[type=button] {
         border-bottom: 4px solid darken($COLOR_LIGHT_PINK, 10%);
         font-weight: 700;
         letter-spacing: 2px;
+        &:hover {
+            border-bottom: 2px solid darken($COLOR_LIGHT_PINK, 10%);
+        }
+        &:active {
+            background: darken($COLOR_LIGHT_PINK, 5%);
+        }
     }
     /* 削除ボタン */
     &.yu-delete-btn {
@@ -147,6 +190,12 @@ input[type=button] {
         border-bottom: 4px solid darken($COLOR_LIGHT_MINT, 10%);
         font-weight: 700;
         letter-spacing: 2px;
+        &:hover {
+            border-bottom: 2px solid darken($COLOR_LIGHT_MINT, 10%);
+        }
+        &:active {
+            background: darken($COLOR_LIGHT_MINT, 5%);
+        }
     }
 }
 
@@ -443,13 +492,13 @@ header {
     ul {
         margin-right: 10px;
         li {
-            display: inline;
             margin: 0 5px;
             position: relative;
             /* アイコン */
             i { font-size: 24px; }
             /* アイコンバッジ */
             &.yu-badge {
+                cursor: pointer;
                 &::before {
                     display: block;
                     content: '';
@@ -458,7 +507,7 @@ header {
                     background: $COLOR_PINK;
                     border-radius: 50%;
                     position: absolute;
-                    top: -5px;
+                    top: 9px;
                     right: -2px;
                 }
             }
@@ -783,10 +832,17 @@ main {
                 background: none;
                 margin: 0 5px;
                 color: #aaa;
+                cursor: default;
+                &:hover {
+                    background: none;
+                    color: #aaa;
+                    border: 1px solid #fff;
+                }
             }
             &.yu-now {
-                background: $COLOR_LIGHT_PURPLE;
-                color: #fff;
+                border: 1px solid $COLOR_LIGHT_PURPLE !important;
+                background: $COLOR_LIGHT_PURPLE !important;
+                color: #fff !important;
             }
         }
     }
@@ -803,5 +859,14 @@ main {
         font-size: 10px;
         margin: 0 3px;
         color: #aaa;
+        cursor: pointer;
+        transition: .3s;
+        border: 1px solid #fff; 
+        &:hover {
+            background: #fff;
+            color: $COLOR_LIGHT_PURPLE;
+            border: 1px solid $COLOR_LIGHT_PURPLE;
+            font-weight: 700;
+        }
     }
 }
