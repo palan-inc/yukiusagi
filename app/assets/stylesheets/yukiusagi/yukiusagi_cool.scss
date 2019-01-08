@@ -9,12 +9,13 @@ $COLOR_BG: #F7F8FC;
 $COLOR_CHAR: #444;
 $COLOR_LIGHT_GRAY: #f2f2f2;
 
-$COLOR_PINK: #FD7783;
+$COLOR_REQ: #E15966;
 
-$COLOR_LIGHT_PINK: #FB929E;
-$COLOR_LIGHT_YELLOW: #FAD783;
-$COLOR_LIGHT_MINT: #90D4E1;
-$COLOR_LIGHT_PURPLE: #CDB1FB;
+$COLOR_THEME_1: #7CB0ED;
+$COLOR_THEME_2: #FAD783;
+$COLOR_THEME_3: #90D4E1;
+$COLOR_THEME_4: #7C96ED;
+
 
 $FONT_DEFAULT: 'Noto Sans JP', sans-serif;
 
@@ -100,8 +101,8 @@ body {
 }
 
 article {
+  width: 100%;
     display: flex;
-    min-width: 1440px;
 }
 
 a {
@@ -173,28 +174,28 @@ input[type=button] {
     
     /* 更新ボタン */
     &.yu-update-btn {
-        background: $COLOR_LIGHT_PINK;
-        border-bottom: 4px solid darken($COLOR_LIGHT_PINK, 10%);
+        background: $COLOR_THEME_1;
+        border-bottom: 4px solid darken($COLOR_THEME_1, 10%);
         font-weight: 700;
         letter-spacing: 2px;
         &:hover {
-            border-bottom: 2px solid darken($COLOR_LIGHT_PINK, 10%);
+            border-bottom: 2px solid darken($COLOR_THEME_1, 10%);
         }
         &:active {
-            background: darken($COLOR_LIGHT_PINK, 5%);
+            background: darken($COLOR_THEME_1, 5%);
         }
     }
     /* 削除ボタン */
     &.yu-delete-btn {
-        background: $COLOR_LIGHT_MINT;
-        border-bottom: 4px solid darken($COLOR_LIGHT_MINT, 10%);
+        background: $COLOR_THEME_3;
+        border-bottom: 4px solid darken($COLOR_THEME_3, 10%);
         font-weight: 700;
         letter-spacing: 2px;
         &:hover {
-            border-bottom: 2px solid darken($COLOR_LIGHT_MINT, 10%);
+            border-bottom: 2px solid darken($COLOR_THEME_3, 10%);
         }
         &:active {
-            background: darken($COLOR_LIGHT_MINT, 5%);
+            background: darken($COLOR_THEME_3, 5%);
         }
     }
 }
@@ -384,7 +385,7 @@ table {
 
 /* アラート */
 .yu-alert {
-    background: $COLOR_PINK;
+    background: $COLOR_THEME_1;
     border-radius: 3px;
     padding: 8px 10px;
     margin-bottom: 30px;
@@ -420,10 +421,10 @@ table {
         border-radius: 3px;
         color: #fff;
     }
-    .yu-lbl-pink { background: $COLOR_LIGHT_PINK; }
-    .yu-lbl-blue { background: $COLOR_LIGHT_MINT; }
-    .yu-lbl-yellow { background: $COLOR_LIGHT_YELLOW; }
-    .yu-lbl-purple { background: $COLOR_LIGHT_PURPLE; }
+    .yu-lbl-pink { background: $COLOR_THEME_1; }
+    .yu-lbl-blue { background: $COLOR_THEME_3; }
+    .yu-lbl-yellow { background: $COLOR_THEME_2; }
+    .yu-lbl-purple { background: $COLOR_THEME_4; }
 }
 
 /* 必須ラベル */
@@ -434,7 +435,7 @@ table {
     margin-left: 10px;
     padding: 0 8px;
     border-radius: 2px;
-    background: #FB929E;
+    background: $COLOR_REQ;
 }
 
 /* ボタン右寄せ要素 */
@@ -509,7 +510,7 @@ header {
                     content: '';
                     width: 8px;
                     height: 8px;
-                    background: $COLOR_PINK;
+                    background: $COLOR_REQ;
                     border-radius: 50%;
                     position: absolute;
                     top: 9px;
@@ -534,7 +535,7 @@ header {
         background: #fff;
         &:hover {
             background: #f9f9f9;
-            color: $COLOR_PINK;
+            color: $COLOR_REQ;
         }
     }
 }
@@ -545,7 +546,7 @@ header {
 -------------------------------*/
 
 aside {
-    width: 260px;
+    min-width: 260px;
     min-height: 100%;
     padding: 30px 0;
     background: #fff;
@@ -581,7 +582,7 @@ aside {
                 i {
                     font-size: 10px;
                     margin-right: 2px;
-                    color: $COLOR_PINK;
+                    color: $COLOR_REQ;
                 }
             }
         }
@@ -630,7 +631,7 @@ aside {
                 transition: .3s;
             }
             &:hover {
-                background: lighten($COLOR_LIGHT_PINK, 19%);
+                background: lighten($COLOR_THEME_1, 19%);
                 &::after {
                     transform: rotate(90deg);
                 }
@@ -639,7 +640,7 @@ aside {
             i {
                 font-size: 18px;
                 margin-right: 8px;
-                color: #FD8194;
+                color: $COLOR_THEME_4;
             }
         }
         
@@ -659,7 +660,7 @@ aside {
                 }
                 &::after { display: none; }
                 &:hover {
-                    background: lighten($COLOR_LIGHT_PINK, 19%);
+                    background: lighten($COLOR_THEME_1, 19%);
                 }
             }
         }
@@ -672,7 +673,7 @@ aside {
 -------------------------------*/
 
 main {
-    width: 1100px;
+    width: 100%;
     margin: 40px;
     
     /* 親要素 */
@@ -758,16 +759,16 @@ main {
     }
     
     &.pink {
-        .fas { background: $COLOR_LIGHT_PINK; }
+        .fas { background: $COLOR_THEME_1; }
     }
     &.yellow {
-        .fas { background: $COLOR_LIGHT_YELLOW; }
+        .fas { background: $COLOR_THEME_2; }
     }
     &.blue {
-        .fas { background: $COLOR_LIGHT_MINT; }
+        .fas { background: $COLOR_THEME_3; }
     }
     &.purple {
-        .fas { background: $COLOR_LIGHT_PURPLE; }
+        .fas { background: $COLOR_THEME_4; }
     }
     
     /* アイコン */
@@ -857,8 +858,8 @@ main {
                 }
             }
             &.yu-now {
-                border: 1px solid $COLOR_LIGHT_PURPLE !important;
-                background: $COLOR_LIGHT_PURPLE !important;
+                border: 1px solid $COLOR_THEME_4 !important;
+                background: $COLOR_THEME_4 !important;
                 color: #fff !important;
             }
         }
@@ -881,8 +882,8 @@ main {
         border: 1px solid #fff; 
         &:hover {
             background: #fff;
-            color: $COLOR_LIGHT_PURPLE;
-            border: 1px solid $COLOR_LIGHT_PURPLE;
+            color: $COLOR_THEME_4;
+            border: 1px solid $COLOR_THEME_4;
             font-weight: 700;
         }
     }

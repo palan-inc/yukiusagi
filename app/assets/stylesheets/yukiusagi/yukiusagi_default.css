@@ -77,8 +77,8 @@ body {
   letter-spacing: 1px; }
 
 article {
-  display: flex;
-  min-width: 1440px; }
+  width: 100%;
+  display: flex; }
 
 a {
   color: #444; }
@@ -307,7 +307,7 @@ table {
 
 /* アラート */
 .yu-alert {
-  background: #FD7783;
+  background: #FB929E;
   border-radius: 3px;
   padding: 8px 10px;
   margin-bottom: 30px;
@@ -355,7 +355,7 @@ table {
   margin-left: 10px;
   padding: 0 8px;
   border-radius: 2px;
-  background: #FB929E; }
+  background: #FD7783; }
 
 /* ボタン右寄せ要素 */
 .yu-btn-box {
@@ -372,7 +372,8 @@ table {
 header {
   background: #fff;
   box-shadow: 0 0 10px rgba(100, 100, 100, 0.1);
-  padding: 8px 0;
+  padding: 0;
+  height: 70px;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -426,9 +427,9 @@ header {
     display: block;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 2px;
     width: 70px;
-    height: 62px;
+    height: 70px;
     line-height: 68px;
     text-align: center;
     border-left: 1px solid #E8E8E8;
@@ -442,7 +443,7 @@ header {
 	ASIDE - サイドバー
 -------------------------------*/
 aside {
-  width: 260px;
+  min-width: 230px;
   min-height: 100%;
   padding: 30px 0;
   background: #fff;
@@ -524,7 +525,7 @@ aside {
       aside ul li i {
         font-size: 18px;
         margin-right: 8px;
-        color: #FD8194; }
+        color: #FB929E; }
     aside ul.yu-sub li {
       background: #fff;
       padding: 10px 20px 10px 35px;
@@ -550,7 +551,7 @@ aside {
 	MAIN - メインコンテンツ
 -------------------------------*/
 main {
-  width: 1100px;
+  width: 100%;
   margin: 40px;
   /* 親要素 */
   /* 1BOX */
