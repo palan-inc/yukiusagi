@@ -1,144 +1,81 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <title>🐰</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <script type="text/javascript" src="../../assets/javascripts/yukiusagi.js"></script>
-    <title>Document</title>
-  </head>
-  <body>
-    <header>
-      <div class="yu-box">
-        <div class="yu-l-box">
-          <h1><img src="../../assets/images/logo.svg" alt=""><span>VER 0.1</span></h1>
-          <p class="yu-message">今日はMM月DD日。ウサギを飼う場合、オス同士は絶対に一緒にしてはいけないよ！</p>
-        </div>
-        <div class="yu-r-box">
-          <ul>
-            <li class="yu-badge"><i class="far fa-envelope"></i></li>
-            <li class="yu-badge"><i class="far fa-bell"></i></li>
-          </ul>
-          <img src="../../assets/images/prof.png" class="yu-prof" alt="">
-          <p class="yu-name">エイシス株式会社</p>
-        </div>
-      </div>
-      <a href="" class="yu-logout"><i class="fas fa-sign-out-alt"></i></a>
-    </header>
-    <article>
-      <aside>
-        <div class="yu-user">
-          <img src="../../assets/images/prof.png" class="yu-prof" alt="">
-          <p class="yu-name"><span><i class="fas fa-circle"></i>オンライン中</span>エイシス株式会社</p>
-        </div>
-        <!--<div class="search">
-        <i class="fas fa-search"></i>
-        <input type="text" placeholder="検索する">
-        </div>-->
+<div class="yu-wrap">
+    <section class="yu-box yu-box-4">
+    <h2>表示テーブル<i class="fas fa-times"></i></h2>
+    <nav class="yu-pager yu-head-pager">
         <ul>
-          <li><i class="fas fa-archive"></i>ダッシュボード</li>
-          <li><i class="fas fa-book"></i>レイアウトオプション</li>
-          <ul class="yu-sub">
-            <li>サブカテゴリがはいります</li>
-            <li>サブカテゴリがはいります</li>
-            <li>サブカテゴリがはいります</li>
-          </ul>
-          <li><i class="fas fa-print"></i>ウィジェット</li>
-          <li><i class="fas fa-chart-pie"></i>チャート</li>
-          <li><i class="fas fa-paw"></i>UIエレメント</li>
-          <ul class="yu-sub">
-            <li>サブカテゴリがはいります</li>
-            <li>サブカテゴリがはいります</li>
-            <li>サブカテゴリがはいります</li>
-          </ul>
-          <li><i class="far fa-map"></i>ドキュメンテーション</li>
+        <li><i class="fas fa-chevron-left"></i></li>
+        <li><span class="yu-now">1-15</span>件 表示 / 全<span class="yu-all">3,000</span>件</li>
+        <li><i class="fas fa-chevron-right"></i></li>
         </ul>
-      </aside>
-      <main>
-        <div class="yu-wrap">
-          <section class="yu-box yu-box-4">
-            <h2>表示テーブル<i class="fas fa-times"></i></h2>
-            <nav class="yu-pager yu-head-pager">
-              <ul>
-                <li><i class="fas fa-chevron-left"></i></li>
-                <li><span class="yu-now">1-15</span>件 表示 / 全<span class="yu-all">3,000</span>件</li>
-                <li><i class="fas fa-chevron-right"></i></li>
-              </ul>
-            </nav>
-            <table>
-              <tr>
-                <th>番号</th>
-                <th>氏名</th>
-                <th>住所</th>
-                <th>編集</th>
-                <th>削除</th>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr class="yu-valid">
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr class="yu-valid">
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-            </table>
-            <nav class="yu-pager yu-foot-pager">
-              <ul>
-                <li><i class="fas fa-chevron-left"></i></li>
-                <li class="yu-now">1</li>
-                <li>2</li>
-                <li>3</li>
-                <li class="yu-period">……</li>
-                <li>99</li>
-                <li><i class="fas fa-chevron-right"></i></li>
-              </ul>
-            </nav>
-          </section>
-        </div>
-      </main>
-    </article>
-  </body>
-</html>
+    </nav>
+    <table>
+        <tr>
+        <th>番号</th>
+        <th>氏名</th>
+        <th>住所</th>
+        <th>編集</th>
+        <th>削除</th>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr class="yu-valid">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr class="yu-valid">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+    </table>
+    <nav class="yu-pager yu-foot-pager">
+        <ul>
+        <li><i class="fas fa-chevron-left"></i></li>
+        <li class="yu-now">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li class="yu-period">……</li>
+        <li>99</li>
+        <li><i class="fas fa-chevron-right"></i></li>
+        </ul>
+    </nav>
+    </section>
+</div>
