@@ -300,7 +300,6 @@ table {
   top: 8px;
   cursor: pointer;
   transition: .3s;
-  z-index: 10;
   color: #aaa; }
   .fa-times:hover {
     opacity: .5; }
@@ -343,7 +342,7 @@ header {
   padding: 8px 0;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 5;
   /* ロゴ */
   /* ちょっとしたメッセージ */
   /* プロフィール画像 */
