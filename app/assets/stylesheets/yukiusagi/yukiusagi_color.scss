@@ -1,0 +1,430 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700|Righteous|Cabin:400,700');
+
+/*-------------------------------
+  VARIABLES - COLOR
+-------------------------------*/
+
+$THEME_DEFAULT: (
+ COLOR_REQ: #FD7783
+,COLOR_THEME_1: #FB929E
+,COLOR_THEME_2: #FAD783
+,COLOR_THEME_3: #90D4E1
+,COLOR_THEME_4: #CDB1FB
+);
+
+
+$THEME_COOL: (
+ COLOR_REQ: #E15966
+,COLOR_THEME_1: #7CB0ED
+,COLOR_THEME_2: #FAD783
+,COLOR_THEME_3: #90D4E1
+,COLOR_THEME_4: #7C96ED
+);
+
+/*-------------------------------
+  THEME - DEFAULT
+-------------------------------*/
+
+.yu-theme-default {
+  input[type=button] {  
+    /* 更新ボタン */
+    &.yu-update-btn {
+        background: map-get($THEME_DEFAULT, COLOR_THEME_1);
+        border-bottom: 4px solid darken(map-get($THEME_DEFAULT, COLOR_THEME_1), 10%);
+        &:hover {
+            border-bottom: 2px solid darken(map-get($THEME_DEFAULT, COLOR_THEME_1), 10%);
+        }
+        &:active {
+            background: darken(map-get($THEME_DEFAULT, COLOR_THEME_1), 5%);
+        }
+    }
+    /* 削除ボタン */
+    &.yu-delete-btn {
+        background: map-get($THEME_DEFAULT, COLOR_THEME_3);
+        border-bottom: 4px solid darken(map-get($THEME_DEFAULT, COLOR_THEME_3), 10%);
+        &:hover {
+            border-bottom: 2px solid darken(map-get($THEME_DEFAULT, COLOR_THEME_3), 10%);
+        }
+        &:active {
+            background: darken(map-get($THEME_DEFAULT, COLOR_THEME_3), 5%);
+        }
+    }
+  } 
+
+  /* チェックボックス */
+  .yu-chk-box {
+    label {
+        position: relative;
+        display: inline-block;
+        padding: 3px 3px 3px 22px;
+        margin-right: 15px;
+        cursor: pointer;
+        &::before {
+            position: absolute;
+            content: '';
+            top: 50%;
+            left: 0;
+            width: 14px;
+            height: 14px;
+            margin-top: -8px;
+            background: #fff;
+            border: 1px solid #ccc;
+        }
+    }
+
+    input[type="checkbox"]:checked {
+        + label::after {
+            border-left: 2px solid map-get($THEME_DEFAULT, COLOR_THEME_1);
+            border-bottom: 2px solid map-get($THEME_DEFAULT, COLOR_THEME_1);
+        }
+    }
+  }
+
+  /* ラジオボタン */
+  .yu-rdo-box {
+    label {
+        &::after {
+            background: map-get($THEME_DEFAULT, COLOR_THEME_1);
+        }
+    }
+    input[type="radio"]:checked {
+        + label::before {
+            border: 1px solid map-get($THEME_DEFAULT, COLOR_THEME_1);
+        }
+    }
+  }
+
+  /* アラート */
+  .yu-alert {
+      background: map-get($THEME_DEFAULT, COLOR_THEME_1);
+  }
+
+  /* ラベル */
+  .yu-lbl-box {
+      .yu-lbl-pink { background: map-get($THEME_DEFAULT, COLOR_THEME_1); }
+      .yu-lbl-blue { background: map-get($THEME_DEFAULT, COLOR_THEME_2); }
+      .yu-lbl-yellow { background: map-get($THEME_DEFAULT, COLOR_THEME_3); }
+      .yu-lbl-purple { background: map-get($THEME_DEFAULT, COLOR_THEME_4); }
+  }
+
+
+  /*-------------------------------
+    HEADER
+  -------------------------------*/
+
+  header {
+    /* リスト */
+    ul {
+        li {
+            position: relative;
+            /* アイコンバッジ */
+            &.yu-badge {
+                &::before {
+                    position: absolute;
+                    background: map-get($THEME_DEFAULT, COLOR_REQ);
+                }
+            }
+        }
+    }
+
+    /* ログアウト */
+    .yu-logout {
+        &:hover {
+            color: map-get($THEME_DEFAULT, COLOR_REQ);
+        }
+    }
+  }
+
+
+
+  /*-------------------------------
+    ASIDE - サイドバー
+  -------------------------------*/
+
+  aside {   
+    /* ユーザー情報 */
+    .yu-user {
+
+        /* ユーザー名 */
+        p {  
+            span {
+                i {
+                    color: map-get($THEME_DEFAULT, COLOR_REQ);
+                }
+            }
+        }
+    }
+
+    /* リスト */
+    ul {
+        li {
+            &:hover {
+                background: lighten(map-get($THEME_DEFAULT, COLOR_THEME_1), 19%);
+            }
+            /* アイコン */
+            i {
+                color: map-get($THEME_DEFAULT, COLOR_THEME_1);
+            }
+        }
+
+        /* サブカテゴリ */
+        &.yu-sub {
+            li {
+                &:hover {
+                    background: lighten(map-get($THEME_DEFAULT, COLOR_THEME_1), 19%);
+                }
+            }
+        }
+    }
+  }
+
+  /*-------------------------------
+    MAIN - COLOR HEAD BOX
+  -------------------------------*/
+  .yu-head-box {
+    &.pink {
+        .fas { background: map-get($THEME_DEFAULT, COLOR_THEME_1); }
+    }
+    &.yellow {
+        .fas { background: map-get($THEME_DEFAULT, COLOR_THEME_2); }
+    }
+    &.blue {
+        .fas { background: map-get($THEME_DEFAULT, COLOR_THEME_3); }
+    }
+    &.purple {
+        .fas { background: map-get($THEME_DEFAULT, COLOR_THEME_4); }
+    }
+  }
+
+
+
+  /*-------------------------------
+    MAIN - PAGER
+  -------------------------------*/
+
+  .yu-pager {
+    /* 番号ページャー */
+    &.yu-foot-pager {
+        margin: 10px 0 0;
+        li {
+            &.yu-now {
+                border: 1px solid map-get($THEME_DEFAULT, COLOR_THEME_4) !important;
+                background: map-get($THEME_DEFAULT, COLOR_THEME_4) !important;
+            }
+        }
+    }
+
+    &.yu-head-pager li .fas,
+    &.yu-foot-pager li {
+        &:hover {
+            color: map-get($THEME_DEFAULT, COLOR_THEME_4);
+            border: 1px solid map-get($THEME_DEFAULT, COLOR_THEME_4);
+        }
+    }
+  }
+}
+
+
+/*-------------------------------
+  THEME - COOL
+-------------------------------*/
+
+.yu-theme-cool {
+  input[type=button] {  
+    /* 更新ボタン */
+    &.yu-update-btn {
+        background: map-get($THEME_COOL, COLOR_THEME_1);
+        border-bottom: 4px solid darken(map-get($THEME_COOL, COLOR_THEME_1), 10%);
+        &:hover {
+            border-bottom: 2px solid darken(map-get($THEME_COOL, COLOR_THEME_1), 10%);
+        }
+        &:active {
+            background: darken(map-get($THEME_COOL, COLOR_THEME_1), 5%);
+        }
+    }
+    /* 削除ボタン */
+    &.yu-delete-btn {
+        background: map-get($THEME_COOL, COLOR_THEME_3);
+        border-bottom: 4px solid darken(map-get($THEME_COOL, COLOR_THEME_3), 10%);
+        &:hover {
+            border-bottom: 2px solid darken(map-get($THEME_COOL, COLOR_THEME_3), 10%);
+        }
+        &:active {
+            background: darken(map-get($THEME_COOL, COLOR_THEME_3), 5%);
+        }
+    }
+  } 
+
+  /* チェックボックス */
+  .yu-chk-box {
+    label {
+        position: relative;
+        display: inline-block;
+        padding: 3px 3px 3px 22px;
+        margin-right: 15px;
+        cursor: pointer;
+        &::before {
+            position: absolute;
+            content: '';
+            top: 50%;
+            left: 0;
+            width: 14px;
+            height: 14px;
+            margin-top: -8px;
+            background: #fff;
+            border: 1px solid #ccc;
+        }
+    }
+
+    input[type="checkbox"]:checked {
+        + label::after {
+            border-left: 2px solid map-get($THEME_COOL, COLOR_THEME_1);
+            border-bottom: 2px solid map-get($THEME_COOL, COLOR_THEME_1);
+        }
+    }
+  }
+
+  /* ラジオボタン */
+  .yu-rdo-box {
+    label {
+        &::after {
+            background: map-get($THEME_COOL, COLOR_THEME_1);
+        }
+    }
+    input[type="radio"]:checked {
+        + label::before {
+            border: 1px solid map-get($THEME_COOL, COLOR_THEME_1);
+        }
+    }
+  }
+
+  /* アラート */
+  .yu-alert {
+      background: map-get($THEME_COOL, COLOR_THEME_1);
+  }
+
+  /* ラベル */
+  .yu-lbl-box {
+      .yu-lbl-pink { background: map-get($THEME_COOL, COLOR_THEME_1); }
+      .yu-lbl-blue { background: map-get($THEME_COOL, COLOR_THEME_2); }
+      .yu-lbl-yellow { background: map-get($THEME_COOL, COLOR_THEME_3); }
+      .yu-lbl-purple { background: map-get($THEME_COOL, COLOR_THEME_4); }
+  }
+
+
+  /*-------------------------------
+    HEADER
+  -------------------------------*/
+
+  header {
+    /* リスト */
+    ul {
+        li {
+            position: relative;
+            /* アイコンバッジ */
+            &.yu-badge {
+                &::before {
+                    position: absolute;
+                    background: map-get($THEME_COOL, COLOR_REQ);
+                }
+            }
+        }
+    }
+
+    /* ログアウト */
+    .yu-logout {
+        &:hover {
+            color: map-get($THEME_COOL, COLOR_REQ);
+        }
+    }
+  }
+
+
+
+  /*-------------------------------
+    ASIDE - サイドバー
+  -------------------------------*/
+
+  aside {   
+    /* ユーザー情報 */
+    .yu-user {
+
+        /* ユーザー名 */
+        p {  
+            span {
+                i {
+                    color: map-get($THEME_COOL, COLOR_REQ);
+                }
+            }
+        }
+    }
+
+    /* リスト */
+    ul {
+        li {
+            &:hover {
+                background: lighten(map-get($THEME_COOL, COLOR_THEME_1), 19%);
+            }
+            /* アイコン */
+            i {
+                color: map-get($THEME_COOL, COLOR_THEME_1);
+            }
+        }
+
+        /* サブカテゴリ */
+        &.yu-sub {
+            li {
+                &:hover {
+                    background: lighten(map-get($THEME_COOL, COLOR_THEME_1), 19%);
+                }
+            }
+        }
+    }
+  }
+
+  /*-------------------------------
+    MAIN - COLOR HEAD BOX
+  -------------------------------*/
+  .yu-head-box {
+    &.pink {
+        .fas { background: map-get($THEME_COOL, COLOR_THEME_1); }
+    }
+    &.yellow {
+        .fas { background: map-get($THEME_COOL, COLOR_THEME_2); }
+    }
+    &.blue {
+        .fas { background: map-get($THEME_COOL, COLOR_THEME_3); }
+    }
+    &.purple {
+        .fas { background: map-get($THEME_COOL, COLOR_THEME_4); }
+    }
+  }
+
+
+
+  /*-------------------------------
+    MAIN - PAGER
+  -------------------------------*/
+
+  .yu-pager {
+    /* 番号ページャー */
+    &.yu-foot-pager {
+        margin: 10px 0 0;
+        li {
+            &.yu-now {
+                border: 1px solid map-get($THEME_COOL, COLOR_THEME_4) !important;
+                background: map-get($THEME_COOL, COLOR_THEME_4) !important;
+            }
+        }
+    }
+
+    &.yu-head-pager li .fas,
+    &.yu-foot-pager li {
+        &:hover {
+            color: map-get($THEME_COOL, COLOR_THEME_4);
+            border: 1px solid map-get($THEME_COOL, COLOR_THEME_4);
+        }
+    }
+  }
+}

@@ -1,6 +1,8 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700|Righteous|Cabin:400,700');
 
+@import "yukiusagi_color.css";
+
 /*-------------------------------
 	VARIABLES
 -------------------------------*/
@@ -8,13 +10,6 @@
 $COLOR_BG: #F7F8FC;
 $COLOR_CHAR: #444;
 $COLOR_LIGHT_GRAY: #f2f2f2;
-
-$COLOR_PINK: #FD7783;
-
-$COLOR_LIGHT_PINK: #FB929E;
-$COLOR_LIGHT_YELLOW: #FAD783;
-$COLOR_LIGHT_MINT: #90D4E1;
-$COLOR_LIGHT_PURPLE: #CDB1FB;
 
 $FONT_DEFAULT: 'Noto Sans JP', sans-serif;
 
@@ -55,6 +50,36 @@ $FONT_DEFAULT: 'Noto Sans JP', sans-serif;
     content: '';
 }
 
+/*-------------------------------
+	ANIMATION
+-------------------------------*/
+.yu-wobble {
+    display: inline-block;
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+    &:hover {
+      -webkit-animation: tremble .4s ease-in-out;
+      animation: tremble .4s ease-in-out;
+    }
+}
+
+@-webkit-keyframes tremble {
+  15% { -webkit-transform: translateX(3px) rotate(1deg); }
+  30% { -webkit-transform: translateX(-3px) rotate(-1deg); }
+  45% { -webkit-transform: translateX(2px) rotate(1deg); }
+  60% { -webkit-transform: translateX(-2px) rotate(-1deg); }
+  75% { -webkit-transform: translateX(1px) rotate(1deg); }
+  90% { -webkit-transform: translateX(-1px) rotate(-1deg); }
+}
+@keyframes tremble {
+  15% { transform: translateX(3px) rotate(1deg); }
+  30% { transform: translateX(-3px) rotate(-1deg); }
+  45% { transform: translateX(2px) rotate(1deg); }
+  60% { transform: translateX(-2px) rotate(-1deg); }
+  75% { transform: translateX(1px) rotate(1deg); }
+  90% { transform: translateX(-1px) rotate(-1deg); }
+}
+
 
 /*-------------------------------
 	DEFAULT
@@ -70,8 +95,8 @@ body {
 }
 
 article {
+  width: 100%;
     display: flex;
-    min-width: 1440px;
 }
 
 a {
@@ -130,21 +155,20 @@ input[type=button] {
     position: relative;
     top: -2px;
     outline: none;
+    cursor: pointer;
+    &:hover {
+        top: -1px;
+    }
+    &:active {
+        top: 0;
+    }
     &:disabled {
         opacity: .4;
     }
     
     /* 更新ボタン */
-    &.yu-update-btn {
-        background: $COLOR_LIGHT_PINK;
-        border-bottom: 4px solid darken($COLOR_LIGHT_PINK, 10%);
-        font-weight: 700;
-        letter-spacing: 2px;
-    }
-    /* 削除ボタン */
+    &.yu-update-btn,
     &.yu-delete-btn {
-        background: $COLOR_LIGHT_MINT;
-        border-bottom: 4px solid darken($COLOR_LIGHT_MINT, 10%);
         font-weight: 700;
         letter-spacing: 2px;
     }
@@ -178,8 +202,6 @@ input[type=button] {
             left: 3px;
             width: 13px;
             height: 5px;
-            border-left: 2px solid #FB929E;
-            border-bottom: 2px solid #FB929E;
             -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
         }
@@ -216,15 +238,11 @@ input[type=button] {
             width: 8px;
             height: 8px;
             margin-top: -4px;
-            background: #FB929E;
             -webkit-transform: scale(2);
             transform: scale(2);
         }
     }
     input[type="radio"]:checked {
-        + label::before {
-            border: 1px solid #FB929E;
-        }
          + label::after {
             opacity: 1;
             -webkit-transform: scale(1);
@@ -301,7 +319,6 @@ table {
  */
 .yu-box {
     width: 1320px;
-    margin-left: 20px;
     display: flex;
 }
 
@@ -335,21 +352,24 @@ table {
 
 /* アラート */
 .yu-alert {
-    background: $COLOR_PINK;
     border-radius: 3px;
     padding: 8px 10px;
     margin-bottom: 30px;
     color: #fff;
     position: relative;
+    .fa-times {
+      color: #fff;
+    }
 }
 
 /* 閉じるボタン */
 .fa-times {
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 15px;
+    top: 8px;
     cursor: pointer;
-    transition: .3s;
+    transition: .3s; 
+    color: #aaa;
     &:hover {
         opacity: .5;
     }
@@ -366,10 +386,6 @@ table {
         border-radius: 3px;
         color: #fff;
     }
-    .yu-lbl-pink { background: $COLOR_LIGHT_PINK; }
-    .yu-lbl-blue { background: $COLOR_LIGHT_MINT; }
-    .yu-lbl-yellow { background: $COLOR_LIGHT_YELLOW; }
-    .yu-lbl-purple { background: $COLOR_LIGHT_PURPLE; }
 }
 
 /* 必須ラベル */
@@ -380,7 +396,6 @@ table {
     margin-left: 10px;
     padding: 0 8px;
     border-radius: 2px;
-    background: #FB929E;
 }
 
 /* ボタン右寄せ要素 */
@@ -405,7 +420,7 @@ header {
     padding: 8px 0;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 5;
     
     /* ロゴ */
     h1 {
@@ -443,22 +458,21 @@ header {
     ul {
         margin-right: 10px;
         li {
-            display: inline;
             margin: 0 5px;
             position: relative;
             /* アイコン */
             i { font-size: 24px; }
             /* アイコンバッジ */
             &.yu-badge {
+                cursor: pointer;
                 &::before {
                     display: block;
                     content: '';
                     width: 8px;
                     height: 8px;
-                    background: $COLOR_PINK;
                     border-radius: 50%;
                     position: absolute;
-                    top: -5px;
+                    top: 9px;
                     right: -2px;
                 }
             }
@@ -480,7 +494,6 @@ header {
         background: #fff;
         &:hover {
             background: #f9f9f9;
-            color: $COLOR_PINK;
         }
     }
 }
@@ -491,7 +504,7 @@ header {
 -------------------------------*/
 
 aside {
-    width: 260px;
+    min-width: 260px;
     min-height: 100%;
     padding: 30px 0;
     background: #fff;
@@ -527,7 +540,6 @@ aside {
                 i {
                     font-size: 10px;
                     margin-right: 2px;
-                    color: $COLOR_PINK;
                 }
             }
         }
@@ -563,21 +575,27 @@ aside {
             background: #F5F5F5;
             position: relative;
             cursor: pointer;
+            transition: all .3s;
             &::after {
                 @include FontAwesome("\f054");
                 line-height: 1;
                 font-size: 10px;
                 margin-right: 8px;
-                color: #ccc;  
+                color: #aaa;  
                 position: absolute;
                 right: 10px;
                 top: 15px;
+                transition: .3s;
+            }
+            &:hover {
+                &::after {
+                    transform: rotate(90deg);
+                }
             }
             /* アイコン */
             i {
                 font-size: 18px;
                 margin-right: 8px;
-                color: #FD8194;
             }
         }
         
@@ -596,6 +614,8 @@ aside {
                     color: #dfdfdf;
                 }
                 &::after { display: none; }
+                &:hover {
+                }
             }
         }
     }
@@ -607,17 +627,18 @@ aside {
 -------------------------------*/
 
 main {
-    width: 1100px;
+    width: 100%;
     margin: 40px;
     
     /* 親要素 */
     .yu-box {
+        position: relative;
         display: block;
         background: #fff;
         box-shadow: 0 0 15px rgba(120,120,120,0.1);
         border-radius: 4px;
         margin-bottom: 20px;
-        margin: 0 20px 20px 0;
+        margin: 0 10px 20px 0;
         padding: 5px 25px 20px;
         
         /* 見出し */
@@ -654,21 +675,18 @@ main {
             margin: 0 auto 20px;
         }
     }
-    
-    .yu-box-1 { width: 250px; }  /* 1BOX */
-    .yu-box-2 { width: 490px; }  /* 2BOX */
-    .yu-box-3 { width: 730px; }  /* 3BOX */
-    
-    .yu-box-1,
-    .yu-box-2,
-    .yu-box-3 {
-        &:nth-child(odd){ margin-right: 0; }
-    }
-    
-    /* 4BOX */
-    .yu-box-4 {
-        width: 1050px;
-        margin-right: 0;
+  
+    .yu-wrap-box {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+      flex-wrap: nowrap;
+      margin: 0 calc(0 / 2 * -1) 0;
+      
+      .yu-box {
+        width: 100%;
+      }
     }
 }
 
@@ -676,9 +694,15 @@ main {
 	MAIN - COLOR HEAD BOX
 -------------------------------*/
 
+.yu-wrap-head {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 calc(15px / 2 * -1) 30px;
+}
+
 .yu-head-box {
-    width: 218px;
-    margin-right: 35px;
+    width: 100%;
+    margin: 0 0 0 calc(20px / 2);
     padding: 15px;
     border-radius: 4px;
     background: #fff;
@@ -691,25 +715,11 @@ main {
         margin-right: 0;
     }
     
-    &.pink {
-        .fas { background: $COLOR_LIGHT_PINK; }
-    }
-    &.yellow {
-        .fas { background: $COLOR_LIGHT_YELLOW; }
-    }
-    &.blue {
-        .fas { background: $COLOR_LIGHT_MINT; }
-    }
-    &.purple {
-        .fas { background: $COLOR_LIGHT_PURPLE; }
-    }
-    
     /* アイコン */
     .fas {
         font-size: 45px;
         position: absolute;
         left: 0;
-        background: red;
         width: 150px;
         height: 150px;
         text-align: right;
@@ -783,10 +793,15 @@ main {
                 background: none;
                 margin: 0 5px;
                 color: #aaa;
+                cursor: default;
+                &:hover {
+                    background: none;
+                    color: #aaa;
+                    border: 1px solid #fff;
+                }
             }
             &.yu-now {
-                background: $COLOR_LIGHT_PURPLE;
-                color: #fff;
+                color: #fff !important;
             }
         }
     }
@@ -803,5 +818,12 @@ main {
         font-size: 10px;
         margin: 0 3px;
         color: #aaa;
+        cursor: pointer;
+        transition: .3s;
+        border: 1px solid #fff; 
+        &:hover {
+            background: #fff;
+            font-weight: 700;
+        }
     }
 }

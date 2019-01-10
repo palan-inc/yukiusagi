@@ -6,212 +6,218 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <script type="text/javascript" src="../../assets/javascripts/yukiusagi.js"></script>
     <title>Document</title>
   </head>
   <body>
     <header>
-        <div class="yu-box">
-           <div class="yu-l-box">
-                <h1><img src="../../assets/images/logo.svg" alt=""><span>VER 0.1</span></h1>
-                <p class="yu-message">今日はMM月DD日。ウサギを飼う場合、オス同士は絶対に一緒にしてはいけないよ！</p>
-            </div>
-            <div class="yu-r-box">
-                <ul>
-                    <li class="yu-badge"><i class="far fa-envelope"></i></li>
-                    <li class="yu-badge"><i class="far fa-bell"></i></li>
-                </ul>
-                <img src="../../assets/images/prof.png" class="yu-prof" alt="">
-                <p class="yu-name">エイシス株式会社</p>
-            </div>
+      <div class="yu-box">
+        <div class="yu-l-box">
+          <h1><img src="../../assets/images/logo.svg" alt=""><span>VER 0.1</span></h1>
+          <p class="yu-message">今日はMM月DD日。ウサギを飼う場合、オス同士は絶対に一緒にしてはいけないよ！</p>
         </div>
-        <a href="" class="yu-logout"><i class="fas fa-sign-out-alt"></i></a>
+        <div class="yu-r-box">
+          <ul>
+            <li class="yu-badge"><i class="far fa-envelope"></i></li>
+            <li class="yu-badge"><i class="far fa-bell"></i></li>
+          </ul>
+          <img src="../../assets/images/prof.png" class="yu-prof" alt="">
+          <p class="yu-name">エイシス株式会社</p>
+        </div>
+      </div>
+      <a href="" class="yu-logout"><i class="fas fa-sign-out-alt"></i></a>
     </header>
     <article>
-        <aside>
-            <div class="yu-user">
-                <img src="../../assets/images/prof.png" class="yu-prof" alt="">
-                <p class="yu-name"><span><i class="fas fa-circle"></i>オンライン中</span>エイシス株式会社</p>
+      <aside>
+        <div class="yu-user">
+          <img src="../../assets/images/prof.png" class="yu-prof" alt="">
+          <p class="yu-name"><span><i class="fas fa-circle"></i>オンライン中</span>エイシス株式会社</p>
+        </div>
+        <!--<div class="search">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="検索する">
+        </div>-->
+        <ul>
+          <li><i class="fas fa-archive"></i>ダッシュボード</li>
+          <li><i class="fas fa-book"></i>レイアウトオプション</li>
+          <ul class="yu-sub">
+            <li>サブカテゴリがはいります</li>
+            <li>サブカテゴリがはいります</li>
+            <li>サブカテゴリがはいります</li>
+          </ul>
+          <li><i class="fas fa-print"></i>ウィジェット</li>
+          <li><i class="fas fa-chart-pie"></i>チャート</li>
+          <li><i class="fas fa-paw"></i>UIエレメント</li>
+          <ul class="yu-sub">
+            <li>サブカテゴリがはいります</li>
+            <li>サブカテゴリがはいります</li>
+            <li>サブカテゴリがはいります</li>
+          </ul>
+          <li><i class="far fa-map"></i>ドキュメンテーション</li>
+        </ul>
+      </aside>
+      <main>
+        <div class="yu-alert"><p>【アラート】ゆきうさぎをインストールしてくれてありがとう！</p><i class="fas fa-times"></i></div>
+        <div class="yu-wrap">
+          <div class="yu-head-box pink">
+            <i class="fas fa-laptop"></i>
+            <h3><span>日本語の見出し</span>HEADING</h3>
+            <p class="yu-num">200</p>
+          </div>
+          <div class="yu-head-box blue">
+            <i class="fas fa-cogs"></i>
+            <h3><span>日本語の見出し</span>HEADING</h3>
+            <p class="yu-num">1,000,000</p>
+          </div>
+          <div class="yu-head-box yellow">
+            <i class="fas fa-toolbox"></i>
+            <h3><span>日本語の見出し</span>HEADING</h3>
+            <p class="yu-num">1,000,000</p>
+          </div>
+          <div class="yu-head-box purple">
+            <i class="fas fa-gem"></i>
+            <h3><span>日本語の見出し</span>HEADING</h3>
+            <p class="yu-num">100,293</p>
+          </div>
+        </div>
+        <div class="yu-wrap">
+          <section class="yu-box yu-box-4">
+            <h2>表示テーブル<i class="fas fa-times"></i></h2>
+            <nav class="yu-pager yu-head-pager">
+              <ul>
+                <li><i class="fas fa-chevron-left"></i></li>
+                <li><span class="yu-now">1-15</span>件 表示 / 全<span class="yu-all">3,000</span>件</li>
+                <li><i class="fas fa-chevron-right"></i></li>
+              </ul>
+            </nav>
+            <div class="yu-lbl-box">
+              <span class="yu-lbl yu-lbl-purple">通常ラベル</span>
+              <span class="yu-lbl yu-lbl-yellow">警告ラベル</span>
+              <span class="yu-lbl yu-lbl-blue">正常ラベル</span>
+              <span class="yu-lbl yu-lbl-pink">異常ラベル</span>
             </div>
-            <!--<div class="search">
-                <i class="fas fa-search"></i>
-                <input type="text" placeholder="検索する">
-            </div>-->
-            <ul>
-                <li><i class="fas fa-archive"></i>ダッシュボード</li>
-                <li><i class="fas fa-book"></i>レイアウトオプション</li>
-                <ul class="yu-sub">
-                    <li>サブカテゴリがはいります</li>
-                    <li>サブカテゴリがはいります</li>
-                    <li>サブカテゴリがはいります</li>
-                </ul>
-                <li><i class="fas fa-print"></i>ウィジェット</li>
-                <li><i class="fas fa-chart-pie"></i>チャート</li>
-                <li><i class="fas fa-paw"></i>UIエレメント</li>
-                <ul class="yu-sub">
-                    <li>サブカテゴリがはいります</li>
-                    <li>サブカテゴリがはいります</li>
-                    <li>サブカテゴリがはいります</li>
-                </ul>
-                <li><i class="far fa-map"></i>ドキュメンテーション</li>
-            </ul>
-        </aside>
-        <main>
-            <div class="yu-alert"><p>【アラート】ゆきうさぎをインストールしてくれてありがとう！</p><i class="fas fa-times"></i></div>
-            <div class="yu-wrap">
-                <div class="yu-head-box pink">
-                   <i class="fas fa-laptop"></i>
-                    <h3><span>日本語の見出し</span>HEADING</h3>
-                    <p class="yu-num">200</p>
-                </div>
-                <div class="yu-head-box blue">
-                   <i class="fas fa-cogs"></i>
-                    <h3><span>日本語の見出し</span>HEADING</h3>
-                    <p class="yu-num">1,000,000</p>
-                </div>
-                <div class="yu-head-box yellow">
-                   <i class="fas fa-toolbox"></i>
-                    <h3><span>日本語の見出し</span>HEADING</h3>
-                    <p class="yu-num">1,000,000</p>
-                </div>
-                <div class="yu-head-box purple">
-                   <i class="fas fa-gem"></i>
-                    <h3><span>日本語の見出し</span>HEADING</h3>
-                    <p class="yu-num">100,293</p>
-                </div>
+            <table>
+              <tr>
+                <th>番号</th>
+                <th>氏名</th>
+                <th>住所</th>
+                <th>編集</th>
+                <th>削除</th>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><input type="button" value="編集"></td>
+                <td><input type="button" value="削除"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><input type="button" class="yu-update-btn" value="編集"></td>
+                <td><input type="button" class="yu-delete-btn" value="削除"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><input type="button" class="yu-update-btn" value="編集"></td>
+                <td><input type="button" class="yu-delete-btn" value="削除"></td>
+              </tr>
+              <tr class="yu-valid">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><input type="button" class="yu-update-btn" disabled value="編集"></td>
+                <td><input type="button" class="yu-delete-btn" disabled value="削除"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+            <nav class="yu-pager yu-foot-pager">
+              <ul>
+                <li><i class="fas fa-chevron-left"></i></li>
+                <li class="yu-now">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li class="yu-period">……</li>
+                <li>99</li>
+                <li><i class="fas fa-chevron-right"></i></li>
+              </ul>
+            </nav>
+          </section>
+          <section class="yu-box yu-box-2">
+            <h2>ゆきうさぎについて<i class="fas fa-times"></i></h2>
+            <h3>こんにちは！ゆきうさぎをインストールしてくれてありがとう🐰</h3>
+            <img src="../../assets/images/dammy.png" alt="">
+            <p>ゆきうさぎgemについての説明文をここにいれたいです。<br>
+            お節介すぎないgem、それがゆきうさぎです。あなたの管理画面をちょこっとだけ可愛らしく、寄り添ってサポートします。</p>
+            <p><strong>お節介すぎない管理画面、あなたも使ってみませんか？</strong></p>
+          </section>
+          <section class="yu-box yu-box-2">
+            <h2>フォーム群<i class="fas fa-times"></i></h2>
+            <h3>テキストインプット<span class="yu-req">必須</span></h3>
+            <input type="text" placeholder="文字を入力してください">
+            <textarea placeholder="内容を入力してください"></textarea>
+            <h3>パスワード<span class="yu-req">必須</span></h3>
+            <input type="password">
+            <h3>ドロップダウン</h3>
+            <select><option value="選択要素1">選択要素1</option></select>
+            <h3>ラジオボタン/チェックボックス</h3>
+            <div class="yu-chk-box">
+              <input type="checkbox" id="checkbox01" name="demo" /><label for="checkbox01">選択してください</label>
+              <input type="checkbox" id="checkbox02" name="demo" /><label for="checkbox02">選択してください</label>
+              <input type="checkbox" id="checkbox03" name="demo" /><label for="checkbox03">選択してください</label>
             </div>
-            <div class="yu-wrap">
-                <section class="yu-box yu-box-4">
-                    <h2>表示テーブル<i class="fas fa-times"></i></h2>
-                    <nav class="yu-pager yu-head-pager">
-                        <ul>
-                            <li><i class="fas fa-chevron-left"></i></li>
-                            <li><span class="yu-now">1-15</span>件 表示 / 全<span class="yu-all">3,000</span>件</li>
-                            <li><i class="fas fa-chevron-right"></i></li>
-                        </ul>
-                    </nav>
-                    <div class="yu-lbl-box"><span class="yu-lbl yu-lbl-purple">通常ラベル</span><span class="yu-lbl yu-lbl-yellow">警告ラベル</span><span class="yu-lbl yu-lbl-blue">正常ラベル</span><span class="yu-lbl yu-lbl-pink">異常ラベル</span></div>
-                    <table>
-                        <tr>
-                            <th>番号</th>
-                            <th>氏名</th>
-                            <th>住所</th>
-                            <th>編集</th>
-                            <th>削除</th>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td><input type="button" value="編集"></td>
-                            <td><input type="button" value="削除"></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td><input type="button" class="yu-update-btn" value="編集"></td>
-                            <td><input type="button" class="yu-delete-btn" value="削除"></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td><input type="button" class="yu-update-btn" value="編集"></td>
-                            <td><input type="button" class="yu-delete-btn" value="削除"></td>
-                        </tr>
-                        <tr class="yu-valid">
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td><input type="button" class="yu-update-btn" disabled value="編集"></td>
-                            <td><input type="button" class="yu-delete-btn" disabled value="削除"></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </table>
-                    <nav class="yu-pager yu-foot-pager">
-                        <ul>
-                            <li><i class="fas fa-chevron-left"></i></li>
-                            <li class="yu-now">1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li class="yu-period">……</li>
-                            <li>99</li>
-                            <li><i class="fas fa-chevron-right"></i></li>
-                        </ul>
-                    </nav>
-                </section>
-                <section class="yu-box yu-box-2">
-                    <h2>ゆきうさぎについて<i class="fas fa-times"></i></h2>
-                    <h3>こんにちは！ゆきうさぎをインストールしてくれてありがとう🐰</h3>
-                    <img src="../../assets/images/dammy.png" alt="">
-                    <p>ゆきうさぎgemについての説明文をここにいれたいです。<br>
-                      お節介すぎないgem、それがゆきうさぎです。あなたの管理画面をちょこっとだけ可愛らしく、寄り添ってサポートします。</p>
-                    <p><strong>お節介すぎない管理画面、あなたも使ってみませんか？</strong></p>
-                </section>
-                <section class="yu-box yu-box-2">
-                    <h2>フォーム群<i class="fas fa-times"></i></h2>
-                    <h3>テキストインプット<span class="yu-req">必須</span></h3>
-                    <input type="text" placeholder="文字を入力してください">
-                    <textarea placeholder="内容を入力してください"></textarea>
-                    <h3>パスワード<span class="yu-req">必須</span></h3>
-                    <input type="password">
-                    <h3>ドロップダウン</h3>
-                    <select><option value="選択要素1">選択要素1</option></select>
-                    <h3>ラジオボタン/チェックボックス</h3>
-                    <div class="yu-chk-box">
-                        <input type="checkbox" id="checkbox01" name="demo" /><label for="checkbox01">選択してください</label>
-                        <input type="checkbox" id="checkbox02" name="demo" /><label for="checkbox02">選択してください</label>
-                        <input type="checkbox" id="checkbox03" name="demo" /><label for="checkbox03">選択してください</label>
-                    </div>
-                    <div class="yu-rdo-box">
-                        <input type="radio" id="radiobox01" name="demo" /><label for="radiobox01">選択してください</label>
-                        <input type="radio" id="radiobox02" name="demo" /><label for="radiobox02">選択してください</label>
-                        <input type="radio" id="radiobox03" name="demo" /><label for="radiobox03">選択してください</label>
-                    </div>
-                    <div class="yu-btn-box">
-                        <input type="button" class="yu-update-btn" value="編集">
-                        <input type="button" class="yu-delete-btn" value="削除">
-                    </div>
-                </section>
-                <section class="yu-box yu-box-1">
-                    <h2>ちょっとしたメモにも使えます<i class="fas fa-times"></i></h2>
-                </section>
-                <section class="yu-box yu-box-3">
-                    <h2>3カラムも少し大きめな要素も用意しています<i class="fas fa-times"></i></h2>
-                    <img src="../../assets/images/dammy.png" alt="">
-                    <p>ゆきうさぎgemについての説明文をここにいれたいです。</p>
-                </section>
-                <section class="yu-box yu-box-4">
-                    <h2>簡易フォームも作れます<i class="fas fa-times"></i></h2>
-                    <p>要素に合わせてフォームのコンポーネント群はリサイズされますので、サイズ指定する必要もありません。あなただけのゆきうさぎ、ぜひ可愛がってあげてください。</p>
-                    <input type="text" placeholder="文字を入力してください">
-                    <textarea placeholder="内容を入力してください"></textarea>
-                    <div class="yu-btn-box">
-                        <input type="button" class="yu-update-btn" value="編集">
-                    </div>
-                </section>
+            <div class="yu-rdo-box">
+              <input type="radio" id="radiobox01" name="demo" /><label for="radiobox01">選択してください</label>
+              <input type="radio" id="radiobox02" name="demo" /><label for="radiobox02">選択してください</label>
+              <input type="radio" id="radiobox03" name="demo" /><label for="radiobox03">選択してください</label>
             </div>
-        </main>
+            <div class="yu-btn-box">
+              <input type="button" class="yu-update-btn" value="編集">
+              <input type="button" class="yu-delete-btn" value="削除">
+            </div>
+          </section>
+          <section class="yu-box yu-box-1">
+            <h2>ちょっとしたメモにも使えます<i class="fas fa-times"></i></h2>
+          </section>
+          <section class="yu-box yu-box-3">
+            <h2>3カラムも少し大きめな要素も用意しています<i class="fas fa-times"></i></h2>
+            <img src="../../assets/images/dammy.png" alt="">
+            <p>ゆきうさぎgemについての説明文をここにいれたいです。</p>
+          </section>
+          <section class="yu-box yu-box-4">
+            <h2>簡易フォームも作れます<i class="fas fa-times"></i></h2>
+            <p>要素に合わせてフォームのコンポーネント群はリサイズされますので、サイズ指定する必要もありません。あなただけのゆきうさぎ、ぜひ可愛がってあげてください。</p>
+            <input type="text" placeholder="文字を入力してください">
+            <textarea placeholder="内容を入力してください"></textarea>
+            <div class="yu-btn-box">
+              <input type="button" class="yu-update-btn" value="編集">
+            </div>
+          </section>
+        </div>
+      </main>
     </article>
   </body>
 </html>
