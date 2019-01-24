@@ -66,6 +66,30 @@
   90% {
     transform: translateX(-1px) rotate(-1deg); } }
 
+.yu-fadeout {
+  animation: fadeOut 0.7s;
+  animation-fill-mode: both; }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.yu-show-menu {
+  display: block;
+  transition: .3s;
+  height: 100%;
+  visibility: visible;
+  opacity: 1; }
+
+.yu-hide-menu {
+  display: none;
+  transition: .3s;
+  height: 0;
+  visibility: hidden;
+  opacity: 0; }
+
 /*-------------------------------
 	DEFAULT
 -------------------------------*/
