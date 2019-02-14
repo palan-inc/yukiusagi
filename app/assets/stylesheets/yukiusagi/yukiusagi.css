@@ -1,0 +1,1005 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700|Righteous|Cabin:400,700");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700|Righteous|Cabin:400,700");
+/*-------------------------------
+  VARIABLES - COLOR
+-------------------------------*/
+/*-------------------------------
+  THEME - DEFAULT
+-------------------------------*/
+.yu-theme-default {
+  /* チェックボックス */
+  /* ラジオボタン */
+  /* アラート */
+  /* ラベル */
+  /*-------------------------------
+  HEADER
+  -------------------------------*/
+  /*-------------------------------
+  ASIDE - サイドバー
+  -------------------------------*/
+  /*-------------------------------
+  MAIN - COLOR HEAD BOX
+  -------------------------------*/
+  /*-------------------------------
+  MAIN - PAGER
+  -------------------------------*/ }
+  .yu-theme-default input[type=button].yu-update-btn, .yu-theme-default input[type=button].yu-theme1-btn {
+    background: #FB929E;
+    border-bottom: 4px solid #f96172;
+    font-weight: 700;
+    letter-spacing: 2px; }
+    .yu-theme-default input[type=button].yu-update-btn:hover, .yu-theme-default input[type=button].yu-theme1-btn:hover {
+      border-bottom: 2px solid #f96172; }
+    .yu-theme-default input[type=button].yu-update-btn:active, .yu-theme-default input[type=button].yu-theme1-btn:active {
+      background: #fa7988; }
+  .yu-theme-default input[type=button].yu-delete-btn {
+    background: #E37277;
+    border-bottom: 4px solid #db474e;
+    font-weight: 700;
+    letter-spacing: 2px; }
+    .yu-theme-default input[type=button].yu-delete-btn:hover {
+      border-bottom: 2px solid #db474e; }
+    .yu-theme-default input[type=button].yu-delete-btn:active {
+      background: #df5d62; }
+  .yu-theme-default input[type=button].yu-theme2-btn {
+    background: #FAD783;
+    border-bottom: 4px solid #f8c752;
+    font-weight: 700;
+    letter-spacing: 2px; }
+    .yu-theme-default input[type=button].yu-theme2-btn:hover {
+      border-bottom: 2px solid #f8c752; }
+    .yu-theme-default input[type=button].yu-theme2-btn:active {
+      background: #f9cf6a; }
+  .yu-theme-default input[type=button].yu-theme3-btn {
+    background: #90D4E1;
+    border-bottom: 4px solid #68c4d6;
+    font-weight: 700;
+    letter-spacing: 2px; }
+    .yu-theme-default input[type=button].yu-theme3-btn:hover {
+      border-bottom: 2px solid #68c4d6; }
+    .yu-theme-default input[type=button].yu-theme3-btn:active {
+      background: #7cccdc; }
+  .yu-theme-default input[type=button].yu-theme4-btn {
+    background: #FAD783;
+    border-bottom: 4px solid #f8c752;
+    font-weight: 700;
+    letter-spacing: 2px; }
+    .yu-theme-default input[type=button].yu-theme4-btn:hover {
+      border-bottom: 2px solid #f8c752; }
+    .yu-theme-default input[type=button].yu-theme4-btn:active {
+      background: #f9cf6a; }
+  .yu-theme-default input[type=button].yu-theme5-btn {
+    background: #aaa;
+    border-bottom: 4px solid #919191;
+    font-weight: 700;
+    letter-spacing: 2px; }
+    .yu-theme-default input[type=button].yu-theme5-btn:hover {
+      border-bottom: 2px solid #919191; }
+    .yu-theme-default input[type=button].yu-theme5-btn:active {
+      background: #9d9d9d; }
+  .yu-theme-default .yu-chk-box label {
+    position: relative;
+    display: inline-block;
+    padding: 3px 3px 3px 22px;
+    margin-right: 15px;
+    cursor: pointer; }
+    .yu-theme-default .yu-chk-box label::before {
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 0;
+      width: 14px;
+      height: 14px;
+      margin-top: -8px;
+      background: #fff;
+      border: 1px solid #ccc; }
+  .yu-theme-default .yu-chk-box input[type="checkbox"]:checked + label::after {
+    border-left: 2px solid #FB929E;
+    border-bottom: 2px solid #FB929E; }
+  .yu-theme-default .yu-rdo-box label::after {
+    background: #FB929E; }
+  .yu-theme-default .yu-rdo-box input[type="radio"]:checked + label::before {
+    border: 1px solid #FB929E; }
+  .yu-theme-default .yu-alert {
+    background: #FB929E; }
+  .yu-theme-default .yu-lbl-box .yu-lbl-pink {
+    background: #FB929E; }
+  .yu-theme-default .yu-lbl-box .yu-lbl-blue {
+    background: #FAD783; }
+  .yu-theme-default .yu-lbl-box .yu-lbl-yellow {
+    background: #90D4E1; }
+  .yu-theme-default .yu-lbl-box .yu-lbl-purple {
+    background: #CDB1FB; }
+  .yu-theme-default header {
+    /* リスト */
+    /* ログアウト */ }
+    .yu-theme-default header ul li {
+      position: relative;
+      /* アイコンバッジ */ }
+      .yu-theme-default header ul li.yu-badge::before {
+        position: absolute;
+        background: #FD7783; }
+    .yu-theme-default header .yu-logout:hover {
+      color: #FD7783; }
+  .yu-theme-default aside {
+    /* ユーザー情報 */
+    /* リスト */ }
+    .yu-theme-default aside .yu-user {
+      /* ユーザー名 */ }
+      .yu-theme-default aside .yu-user p span i {
+        color: #FD7783; }
+    .yu-theme-default aside ul {
+      /* サブカテゴリ */ }
+      .yu-theme-default aside ul li {
+        /* アイコン */ }
+        .yu-theme-default aside ul li:hover {
+          background: #feeff1; }
+        .yu-theme-default aside ul li i {
+          color: #FB929E; }
+      .yu-theme-default aside ul.yu-sub li:hover {
+        background: #feeff1; }
+  .yu-theme-default .yu-head-box.pink .fas {
+    background: #FB929E; }
+  .yu-theme-default .yu-head-box.yellow .fas {
+    background: #FAD783; }
+  .yu-theme-default .yu-head-box.blue .fas {
+    background: #90D4E1; }
+  .yu-theme-default .yu-head-box.purple .fas {
+    background: #CDB1FB; }
+  .yu-theme-default .yu-pager {
+    /* 番号ページャー */ }
+    .yu-theme-default .yu-pager.yu-foot-pager {
+      margin: 10px 0 0; }
+      .yu-theme-default .yu-pager.yu-foot-pager li.yu-now {
+        border: 1px solid #CDB1FB !important;
+        background: #CDB1FB !important; }
+    .yu-theme-default .yu-pager.yu-head-pager li .fas:hover,
+    .yu-theme-default .yu-pager.yu-foot-pager li:hover {
+      color: #CDB1FB;
+      border: 1px solid #CDB1FB; }
+
+/*-------------------------------
+  THEME - COOL
+-------------------------------*/
+.yu-theme-cool {
+  /* チェックボックス */
+  /* ラジオボタン */
+  /* アラート */
+  /* ラベル */
+  /*-------------------------------
+  HEADER
+  -------------------------------*/
+  /*-------------------------------
+  ASIDE - サイドバー
+  -------------------------------*/
+  /*-------------------------------
+  MAIN - COLOR HEAD BOX
+  -------------------------------*/
+  /*-------------------------------
+    MAIN - PAGER
+    -------------------------------*/ }
+  .yu-theme-cool input[type=button].yu-update-btn, .yu-theme-cool input[type=button].yu-theme1-btn {
+    background: #7CB0ED;
+    border-bottom: 4px solid #4f95e7;
+    font-weight: 700;
+    letter-spacing: 2px; }
+    .yu-theme-cool input[type=button].yu-update-btn:hover, .yu-theme-cool input[type=button].yu-theme1-btn:hover {
+      border-bottom: 2px solid #4f95e7; }
+    .yu-theme-cool input[type=button].yu-update-btn:active, .yu-theme-cool input[type=button].yu-theme1-btn:active {
+      background: #66a2ea; }
+  .yu-theme-cool input[type=button].yu-delete-btn {
+    background: #E37277;
+    border-bottom: 4px solid #db474e;
+    font-weight: 700;
+    letter-spacing: 2px; }
+    .yu-theme-cool input[type=button].yu-delete-btn:hover {
+      border-bottom: 2px solid #db474e; }
+    .yu-theme-cool input[type=button].yu-delete-btn:active {
+      background: #df5d62; }
+  .yu-theme-cool input[type=button].yu-theme2-btn {
+    background: #FAD783;
+    border-bottom: 4px solid #f8c752;
+    font-weight: 700;
+    letter-spacing: 2px; }
+    .yu-theme-cool input[type=button].yu-theme2-btn:hover {
+      border-bottom: 2px solid #f8c752; }
+    .yu-theme-cool input[type=button].yu-theme2-btn:active {
+      background: #f9cf6a; }
+  .yu-theme-cool input[type=button].yu-theme3-btn {
+    background: #90D4E1;
+    border-bottom: 4px solid #68c4d6;
+    font-weight: 700;
+    letter-spacing: 2px; }
+    .yu-theme-cool input[type=button].yu-theme3-btn:hover {
+      border-bottom: 2px solid #68c4d6; }
+    .yu-theme-cool input[type=button].yu-theme3-btn:active {
+      background: #7cccdc; }
+  .yu-theme-cool input[type=button].yu-theme4-btn {
+    background: #FAD783;
+    border-bottom: 4px solid #f8c752;
+    font-weight: 700;
+    letter-spacing: 2px; }
+    .yu-theme-cool input[type=button].yu-theme4-btn:hover {
+      border-bottom: 2px solid #f8c752; }
+    .yu-theme-cool input[type=button].yu-theme4-btn:active {
+      background: #f9cf6a; }
+  .yu-theme-cool input[type=button].yu-theme5-btn {
+    background: #aaa;
+    border-bottom: 4px solid #919191;
+    font-weight: 700;
+    letter-spacing: 2px; }
+    .yu-theme-cool input[type=button].yu-theme5-btn:hover {
+      border-bottom: 2px solid #919191; }
+    .yu-theme-cool input[type=button].yu-theme5-btn:active {
+      background: #9d9d9d; }
+  .yu-theme-cool .yu-chk-box label {
+    position: relative;
+    display: inline-block;
+    padding: 3px 3px 3px 22px;
+    margin-right: 15px;
+    cursor: pointer; }
+    .yu-theme-cool .yu-chk-box label::before {
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 0;
+      width: 14px;
+      height: 14px;
+      margin-top: -8px;
+      background: #fff;
+      border: 1px solid #ccc; }
+  .yu-theme-cool .yu-chk-box input[type="checkbox"]:checked + label::after {
+    border-left: 2px solid #7CB0ED;
+    border-bottom: 2px solid #7CB0ED; }
+  .yu-theme-cool .yu-rdo-box label::after {
+    background: #7CB0ED; }
+  .yu-theme-cool .yu-rdo-box input[type="radio"]:checked + label::before {
+    border: 1px solid #7CB0ED; }
+  .yu-theme-cool .yu-alert {
+    background: #7CB0ED; }
+  .yu-theme-cool .yu-lbl-box .yu-lbl-pink {
+    background: #7CB0ED; }
+  .yu-theme-cool .yu-lbl-box .yu-lbl-blue {
+    background: #FAD783; }
+  .yu-theme-cool .yu-lbl-box .yu-lbl-yellow {
+    background: #90D4E1; }
+  .yu-theme-cool .yu-lbl-box .yu-lbl-purple {
+    background: #7C96ED; }
+  .yu-theme-cool header {
+    /* リスト */
+    /* ログアウト */ }
+    .yu-theme-cool header ul li {
+      position: relative;
+      /* アイコンバッジ */ }
+      .yu-theme-cool header ul li.yu-badge::before {
+        position: absolute;
+        background: #E15966; }
+    .yu-theme-cool header .yu-logout:hover {
+      color: #E15966; }
+  .yu-theme-cool aside {
+    /* ユーザー情報 */
+    /* リスト */ }
+    .yu-theme-cool aside .yu-user {
+      /* ユーザー名 */ }
+      .yu-theme-cool aside .yu-user p span i {
+        color: #E15966; }
+    .yu-theme-cool aside ul {
+      /* サブカテゴリ */ }
+      .yu-theme-cool aside ul li {
+        /* アイコン */ }
+        .yu-theme-cool aside ul li:hover {
+          background: #d1e3f9; }
+        .yu-theme-cool aside ul li i {
+          color: #7CB0ED; }
+      .yu-theme-cool aside ul.yu-sub li:hover {
+        background: #d1e3f9; }
+  .yu-theme-cool .yu-head-box.pink .fas {
+    background: #7CB0ED; }
+  .yu-theme-cool .yu-head-box.yellow .fas {
+    background: #FAD783; }
+  .yu-theme-cool .yu-head-box.blue .fas {
+    background: #90D4E1; }
+  .yu-theme-cool .yu-head-box.purple .fas {
+    background: #7C96ED; }
+  .yu-theme-cool .yu-pager {
+    /* 番号ページャー */ }
+    .yu-theme-cool .yu-pager.yu-foot-pager {
+      margin: 10px 0 0; }
+      .yu-theme-cool .yu-pager.yu-foot-pager li.yu-now {
+        border: 1px solid #7C96ED !important;
+        background: #7C96ED !important; }
+    .yu-theme-cool .yu-pager.yu-head-pager li .fas:hover,
+    .yu-theme-cool .yu-pager.yu-foot-pager li:hover {
+      color: #7C96ED;
+      border: 1px solid #7C96ED; }
+
+/*-------------------------------
+	VARIABLES
+-------------------------------*/
+/*-------------------------------
+	RESET
+-------------------------------*/
+::selection {
+  background: #f2f2f2; }
+
+::placeholder {
+  color: #aaa;
+  opacity: .5; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  letter-spacing: 0;
+  line-height: 1.75; }
+
+*::before,
+*::after {
+  content: ''; }
+
+/*-------------------------------
+	ANIMATION
+-------------------------------*/
+.yu-wobble {
+  display: inline-block;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out; }
+  .yu-wobble:hover {
+    -webkit-animation: tremble .4s ease-in-out;
+    animation: tremble .4s ease-in-out; }
+
+@-webkit-keyframes tremble {
+  15% {
+    -webkit-transform: translateX(3px) rotate(1deg); }
+  30% {
+    -webkit-transform: translateX(-3px) rotate(-1deg); }
+  45% {
+    -webkit-transform: translateX(2px) rotate(1deg); }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg); }
+  75% {
+    -webkit-transform: translateX(1px) rotate(1deg); }
+  90% {
+    -webkit-transform: translateX(-1px) rotate(-1deg); } }
+
+@keyframes tremble {
+  15% {
+    transform: translateX(3px) rotate(1deg); }
+  30% {
+    transform: translateX(-3px) rotate(-1deg); }
+  45% {
+    transform: translateX(2px) rotate(1deg); }
+  60% {
+    transform: translateX(-2px) rotate(-1deg); }
+  75% {
+    transform: translateX(1px) rotate(1deg); }
+  90% {
+    transform: translateX(-1px) rotate(-1deg); } }
+
+.yu-fadeout {
+  animation: fadeOut 0.7s;
+  animation-fill-mode: both; }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.yu-show-menu {
+  display: block;
+  transition: .3s;
+  height: 100%;
+  visibility: visible;
+  opacity: 1; }
+
+.yu-hide-menu {
+  display: none;
+  transition: .3s;
+  height: 0;
+  visibility: hidden;
+  opacity: 0; }
+
+/*-------------------------------
+	DEFAULT
+-------------------------------*/
+body {
+  color: #444;
+  background: #F7F8FC;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px; }
+
+article,
+.yu-container {
+  width: 100%;
+  display: flex; }
+
+a {
+  color: #444; }
+
+/*-------------------------------
+	FORM
+-------------------------------*/
+input,
+select,
+textarea {
+  font-family: "Noto Sans JP", sans-serif;
+  display: block; }
+
+input[type=text],
+input[type=password],
+textarea,
+select {
+  width: 100%;
+  height: 28px;
+  border-radius: 3px;
+  line-height: 2;
+  border: 1px solid #dfdfdf;
+  margin-bottom: 8px;
+  padding: 0 10px;
+  font-size: 13px;
+  box-sizing: border-box;
+  outline: none; }
+  input[type=text]:focus,
+  input[type=password]:focus,
+  textarea:focus,
+  select:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none; }
+
+textarea {
+  min-height: 150px;
+  padding: 5px 10px;
+  line-height: 1.6; }
+
+input[type=button] {
+  border: none;
+  color: #fff;
+  display: inline-block;
+  width: 54px;
+  line-height: 2;
+  border-radius: 3px;
+  position: relative;
+  top: -2px;
+  outline: none;
+  cursor: pointer;
+  /* 更新ボタン */ }
+  input[type=button]:hover {
+    top: -1px; }
+  input[type=button]:active {
+    top: 0; }
+  input[type=button]:disabled {
+    opacity: .4; }
+  input[type=button].yu-update-btn, input[type=button].yu-delete-btn {
+    font-weight: 700;
+    letter-spacing: 2px; }
+
+/* チェックボックス */
+.yu-chk-box label {
+  position: relative;
+  display: inline-block;
+  padding: 3px 3px 3px 22px;
+  margin-right: 15px;
+  cursor: pointer; }
+  .yu-chk-box label::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    margin-top: -8px;
+    background: #fff;
+    border: 1px solid #ccc; }
+
+.yu-chk-box input[type="checkbox"]:checked + label::after {
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 3px;
+  width: 13px;
+  height: 5px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+/* ラジオボタン */
+.yu-rdo-box label {
+  position: relative;
+  display: inline-block;
+  padding: 3px 3px 3px 20px;
+  cursor: pointer; }
+  .yu-rdo-box label::before, .yu-rdo-box label::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    border-radius: 100%;
+    -webkit-transition: all .3s;
+    transition: all .3s; }
+  .yu-rdo-box label::before {
+    left: 0;
+    width: 14px;
+    height: 14px;
+    margin-top: -8px;
+    background: #fff;
+    border: 1px solid #ccc; }
+  .yu-rdo-box label::after {
+    opacity: 0;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    -webkit-transform: scale(2);
+    transform: scale(2); }
+
+.yu-rdo-box input[type="radio"]:checked + label::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1); }
+
+/*-------------------------------
+	TABLE
+-------------------------------*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0 0 0;
+  /* データ一覧テーブル */ }
+  table tr {
+    /* テーブル見出し */
+    /* テーブルデータ */
+    /* グレーアウト行 */ }
+    table tr th,
+    table tr td {
+      padding: 5px 10px;
+      height: 26px;
+      vertical-align: middle; }
+    table tr th {
+      text-align: left;
+      background: #f5f5f5;
+      border-top: 1px solid #eaeaea;
+      border-bottom: 1px solid #eaeaea;
+      line-height: 2; }
+    table tr td {
+      border-bottom: 1px solid #eaeaea; }
+      table tr td input,
+      table tr td select,
+      table tr td textarea {
+        position: relative;
+        top: 4px; }
+    table tr:nth-child(odd) td {
+      background: #fafafa; }
+    table tr.yu-valid td {
+      background: #ddd !important;
+      color: #aaa; }
+  table.yu-list-table tr:first-child {
+    border-top: 1px solid #eaeaea; }
+  table.yu-list-table tr th {
+    width: 150px; }
+  table.yu-list-table tr td {
+    background: #fff !important; }
+
+/*-------------------------------
+	YKIUSAGI CSS
+-------------------------------*/
+/*
+ * 大枠
+ */
+.yu-box {
+  width: 1320px;
+  display: flex; }
+
+/*
+ * 左寄せBOX
+ */
+.yu-l-box {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: auto;
+  align-items: center; }
+
+/*
+ * 右寄せBOX
+ */
+.yu-r-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+/* メイン枠 */
+.yu-wrap {
+  width: 100%;
+  display: flex;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  align-items: baseline; }
+
+/* アラート */
+.yu-alert {
+  border-radius: 3px;
+  padding: 8px 10px;
+  margin-bottom: 30px;
+  color: #fff;
+  position: relative; }
+  .yu-alert .fa-times {
+    color: #fff; }
+
+/* 閉じるボタン */
+.fa-times {
+  position: absolute;
+  right: 15px;
+  top: 8px;
+  cursor: pointer;
+  transition: .3s;
+  color: #aaa; }
+  .fa-times:hover {
+    opacity: .5; }
+
+/* ラベル */
+.yu-lbl-box {
+  margin-top: -30px; }
+  .yu-lbl-box .yu-lbl {
+    font-size: 10px;
+    margin: 0 5px 0 0;
+    padding: 2px 8px;
+    display: inline-block;
+    border-radius: 3px;
+    color: #fff; }
+
+/* 必須ラベル */
+.yu-req {
+  display: inline-block;
+  font-size: 11px;
+  color: #fff;
+  margin-left: 10px;
+  padding: 0 8px;
+  border-radius: 2px; }
+
+/* ボタン右寄せ要素 */
+.yu-btn-box {
+  text-align: right;
+  margin-top: 20px; }
+  .yu-btn-box input[type=button] {
+    width: 100px;
+    height: 32px;
+    line-height: 32px; }
+
+/*-------------------------------
+	HEADER
+-------------------------------*/
+header {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(100, 100, 100, 0.1);
+  padding: 8px 0;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  /* ロゴ */
+  /* ちょっとしたメッセージ */
+  /* プロフィール画像 */
+  /* ユーザー名 */
+  /* リスト */
+  /* ログアウト */ }
+  header h1 img {
+    margin-right: 8px; }
+  header h1 span {
+    font-family: 'Righteous', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    display: none; }
+  header .yu-message {
+    font-size: 12px;
+    margin-left: 10px;
+    padding-top: 12px;
+    color: #aaa; }
+  header .yu-prof {
+    width: 42px;
+    height: 42px; }
+  header .yu-name {
+    font-weight: 700;
+    font-size: 13px;
+    margin-left: 10px; }
+  header ul {
+    margin-right: 10px; }
+    header ul li {
+      margin: 0 5px;
+      position: relative;
+      /* アイコン */
+      /* アイコンバッジ */ }
+      header ul li i {
+        font-size: 24px; }
+      header ul li.yu-badge {
+        cursor: pointer; }
+        header ul li.yu-badge::before {
+          display: block;
+          content: '';
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          position: absolute;
+          top: 9px;
+          right: -2px; }
+  header .yu-logout {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70px;
+    height: 62px;
+    line-height: 68px;
+    text-align: center;
+    border-left: 1px solid #E8E8E8;
+    transition: all .3s;
+    background: #fff; }
+    header .yu-logout:hover {
+      background: #f9f9f9; }
+
+/*-------------------------------
+	ASIDE - サイドバー
+-------------------------------*/
+aside {
+  min-width: 260px;
+  min-height: 100%;
+  padding: 30px 0;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(100, 100, 100, 0.1);
+  /* ユーザー情報 */
+  /* 検索窓 */
+  /* リスト */ }
+  aside .yu-user,
+  aside .yu-search {
+    padding: 0 20px; }
+  aside .yu-user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    /* プロフィール画像 */
+    /* ユーザー名 */ }
+    aside .yu-user img {
+      width: 64px;
+      height: 64px;
+      margin-right: 20px; }
+    aside .yu-user p {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.5; }
+      aside .yu-user p span {
+        display: block;
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: -2px; }
+        aside .yu-user p span i {
+          font-size: 10px;
+          margin-right: 2px; }
+  aside .yu-search {
+    display: flex;
+    margin-bottom: 20px; }
+    aside .yu-search i {
+      position: relative;
+      color: #aaa;
+      top: 5px;
+      left: 10px; }
+    aside .yu-search input {
+      width: 240px;
+      margin-left: -14px;
+      padding: 5px 10px 5px 28px;
+      border: 1px solid #dfdfdf;
+      border-radius: 5px; }
+  aside ul {
+    /* サブカテゴリ */ }
+    aside ul li {
+      padding: 5px 20px;
+      border-bottom: 1px solid #fff;
+      background: #F5F5F5;
+      position: relative;
+      cursor: pointer;
+      transition: all .3s;
+      /* アイコン */ }
+      aside ul li:first-child {
+        border-top: 1px solid #fff; }
+      aside ul li::after {
+        content: "";
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-family: "Font Awesome 5 Free";
+        font-weight: bold;
+        text-rendering: auto;
+        line-height: 1;
+        font-size: 10px;
+        margin-right: 8px;
+        color: #aaa;
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        transition: .3s; }
+      aside ul li:hover::after {
+        transform: rotate(90deg); }
+      aside ul li i {
+        font-size: 18px;
+        margin-right: 8px; }
+    aside ul.yu-sub li {
+      background: #fff;
+      padding: 10px 20px 10px 35px;
+      border-bottom: 1px solid #efefef;
+      font-size: 12px; }
+      aside ul.yu-sub li::before {
+        content: "";
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-family: "Font Awesome 5 Free";
+        font-weight: bold;
+        text-rendering: auto;
+        line-height: 1;
+        font-size: 13px;
+        margin-right: 8px;
+        color: #dfdfdf; }
+      aside ul.yu-sub li::after {
+        display: none; }
+
+/*-------------------------------
+	MAIN - メインコンテンツ
+-------------------------------*/
+main {
+  width: 100%;
+  margin: 40px;
+  /* 親要素 */ }
+  main .yu-box {
+    position: relative;
+    display: block;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(120, 120, 120, 0.1);
+    border-radius: 4px;
+    margin-bottom: 20px;
+    margin: 0 10px 20px 0;
+    padding: 5px 25px 20px;
+    /* 見出し */
+    /* 中見出し */
+    /* 段落 */
+    /* 画像 */ }
+    main .yu-box h2 {
+      font-size: 15px;
+      border-bottom: 1px solid #efefef;
+      margin-bottom: 20px;
+      padding: 5px 0;
+      position: relative;
+      /* 閉じるアイコン */ }
+      main .yu-box h2 .fas {
+        top: 5px;
+        right: 0;
+        color: #d5d5d5; }
+    main .yu-box h3 {
+      margin: 15px 0 5px 0;
+      font-size: 13px; }
+    main .yu-box p {
+      margin-bottom: 20px; }
+    main .yu-box img {
+      display: block;
+      max-width: 100%;
+      border-radius: 4px;
+      margin: 0 auto 20px; }
+  main .yu-wrap-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+    margin: 0 calc(0 / 2 * -1) 0; }
+    main .yu-wrap-box .yu-box {
+      width: 100%; }
+
+/*-------------------------------
+	MAIN - COLOR HEAD BOX
+-------------------------------*/
+.yu-wrap-head {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 calc(15px / 2 * -1) 30px; }
+
+.yu-head-box {
+  width: 100%;
+  margin: 0 0 0 calc(20px / 2);
+  padding: 15px;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 0 15px rgba(120, 120, 120, 0.1);
+  text-align: right;
+  font-family: 'Cabin', sans-serif;
+  position: relative;
+  overflow: hidden;
+  /* アイコン */
+  /* 見出し */
+  /* 数値 */ }
+  .yu-head-box:last-child {
+    margin-right: 0; }
+  .yu-head-box .fas {
+    font-size: 45px;
+    position: absolute;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    text-align: right;
+    line-height: 150px;
+    border-radius: 50%;
+    padding-right: 20px;
+    border: 15px solid #fff;
+    top: -30px;
+    left: -100px;
+    color: #fff; }
+  .yu-head-box h3 {
+    letter-spacing: 1.5px;
+    line-height: 28px;
+    font-size: 22px;
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+    border-bottom: 1px dotted #efefef; }
+    .yu-head-box h3 span {
+      display: block;
+      font-size: 11px;
+      font-weight: 400;
+      color: #aaa; }
+  .yu-head-box .yu-num {
+    font-size: 22px;
+    font-weight: 700; }
+
+/*-------------------------------
+	MAIN - PAGER
+-------------------------------*/
+.yu-pager {
+  text-align: right;
+  /* n件表示ページャー */
+  /* 番号ページャー */ }
+  .yu-pager li {
+    display: inline; }
+  .yu-pager.yu-head-pager {
+    margin: -10px 0 0; }
+    .yu-pager.yu-head-pager li .yu-now {
+      font-size: 22px;
+      margin: 0 3px; }
+    .yu-pager.yu-head-pager li.yu-all {
+      margin: 0 3px;
+      font-size: 15px; }
+  .yu-pager.yu-foot-pager {
+    margin: 10px 0 0; }
+    .yu-pager.yu-foot-pager li {
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      font-size: 12px;
+      color: #000; }
+      .yu-pager.yu-foot-pager li.yu-period {
+        background: none;
+        margin: 0 5px;
+        color: #aaa;
+        cursor: default; }
+        .yu-pager.yu-foot-pager li.yu-period:hover {
+          background: none;
+          color: #aaa;
+          border: 1px solid #fff; }
+      .yu-pager.yu-foot-pager li.yu-now {
+        color: #fff !important; }
+  .yu-pager.yu-head-pager li .fas,
+  .yu-pager.yu-foot-pager li {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    background: #efefef;
+    font-size: 10px;
+    margin: 0 3px;
+    color: #aaa;
+    cursor: pointer;
+    transition: .3s;
+    border: 1px solid #fff; }
+    .yu-pager.yu-head-pager li .fas:hover,
+    .yu-pager.yu-foot-pager li:hover {
+      background: #fff;
+      font-weight: 700; }
