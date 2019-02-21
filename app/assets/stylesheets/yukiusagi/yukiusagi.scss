@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700|Righteous|Cabin:400,700');
 
-@import "_yukiusagi_color.scss";
+//@import "_yukiusagi_color.scss";
 
 /*-------------------------------
 	VARIABLES
@@ -217,7 +217,7 @@ input[type=button] {
     border: 1px solid #ccc;
   }
   }
-  
+
   input[type="checkbox"]:checked {
   + label::after {
     position: absolute;
@@ -289,7 +289,7 @@ table {
   td {
     padding: 5px 10px;
     height: 26px;
-    vertical-align: middle; 
+    vertical-align: middle;
   }
 
   /* テーブル見出し */
@@ -390,7 +390,7 @@ table {
   right: 15px;
   top: 8px;
   cursor: pointer;
-  transition: .3s; 
+  transition: .3s;
   color: #aaa;
   &:hover {
     opacity: .5;
@@ -443,18 +443,18 @@ header {
   position: sticky;
   top: 0;
   z-index: 5;
-  
+
   /* ロゴ */
   h1 {
     img { margin-right: 8px; }
     span {
       font-family: 'Righteous', sans-serif;
       font-weight: 400;
-      font-size: 16px;  
+      font-size: 16px;
       display: none;
     }
   }
-  
+
   /* ちょっとしたメッセージ */
   .yu-message {
     font-size: 12px;
@@ -462,20 +462,20 @@ header {
     padding-top: 12px;
     color: #aaa;
   }
-  
+
   /* プロフィール画像 */
   .yu-prof {
     width: 42px;
     height: 42px;
   }
-  
+
   /* ユーザー名 */
   .yu-name {
     font-weight: 700;
     font-size: 13px;
     margin-left: 10px;
   }
-  
+
   /* リスト */
   ul {
     margin-right: 10px;
@@ -500,7 +500,7 @@ header {
       }
     }
   }
-  
+
   /* ログアウト */
   .yu-logout {
     display: block;
@@ -535,25 +535,25 @@ aside {
   .yu-search {
     padding: 0 20px;
   }
-  
+
   /* ユーザー情報 */
   .yu-user {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-    
+
     /* プロフィール画像 */
     img {
       width: 64px;
       height: 64px;
       margin-right: 20px;
     }
-    
+
     /* ユーザー名 */
     p {
       font-size: 16px;
       font-weight: 700;
-      line-height: 1.5;   
+      line-height: 1.5;
       span {
         display: block;
         font-size: 12px;
@@ -566,7 +566,7 @@ aside {
       }
     }
   }
-  
+
   /* 検索窓 */
   .yu-search {
     display: flex;
@@ -585,12 +585,12 @@ aside {
       border-radius: 5px;
     }
   }
-  
+
   /* リスト */
   ul {
     li {
-      &:first-child { 
-        border-top: 1px solid #fff; 
+      &:first-child {
+        border-top: 1px solid #fff;
       }
       padding: 5px 20px;
       border-bottom: 1px solid #fff;
@@ -603,7 +603,7 @@ aside {
         line-height: 1;
         font-size: 10px;
         margin-right: 8px;
-        color: #aaa;  
+        color: #aaa;
         position: absolute;
         right: 10px;
         top: 15px;
@@ -620,7 +620,7 @@ aside {
         margin-right: 8px;
       }
     }
-    
+
     /* サブカテゴリ */
     &.yu-sub {
       li {
@@ -651,7 +651,7 @@ aside {
 main {
   width: 100%;
   margin: 40px;
-  
+
   /* 親要素 */
   .yu-box {
     position: relative;
@@ -662,7 +662,7 @@ main {
     margin-bottom: 20px;
     margin: 0 10px 20px 0;
     padding: 5px 25px 20px;
-    
+
     /* 見出し */
     h2 {
       font-size: 15px;
@@ -677,18 +677,18 @@ main {
         color: #d5d5d5;
       }
     }
-    
+
     /* 中見出し */
     h3 {
       margin: 15px 0 5px 0;
       font-size: 13px;
     }
-    
+
     /* 段落 */
-    p { 
-      margin-bottom: 20px; 
+    p {
+      margin-bottom: 20px;
     }
-    
+
     /* 画像 */
     img {
       display: block;
@@ -697,7 +697,7 @@ main {
       margin: 0 auto 20px;
     }
   }
-  
+
   .yu-wrap-box {
     width: 100%;
     display: flex;
@@ -705,7 +705,7 @@ main {
     margin-bottom: 30px;
     flex-wrap: nowrap;
     margin: 0 calc(0 / 2 * -1) 0;
-    
+
     .yu-box {
     width: 100%;
     }
@@ -736,7 +736,7 @@ main {
   &:last-child {
     margin-right: 0;
   }
-  
+
   /* アイコン */
   .fas {
     font-size: 45px;
@@ -753,7 +753,7 @@ main {
     left: -100px;
     color: #fff;
   }
-  
+
   /* 見出し */
   h3 {
     letter-spacing: 1.5px;
@@ -769,7 +769,7 @@ main {
       color: #aaa;
     }
   }
-  
+
   /* 数値 */
   .yu-num {
     font-size: 22px;
@@ -801,7 +801,7 @@ main {
       }
     }
   }
-  
+
   /* 番号ページャー */
   &.yu-foot-pager {
     margin: 10px 0 0;
@@ -827,7 +827,7 @@ main {
       }
     }
   }
-  
+
   &.yu-head-pager li .fas,
   &.yu-foot-pager li {
     display: inline-block;
@@ -842,7 +842,7 @@ main {
     color: #aaa;
     cursor: pointer;
     transition: .3s;
-    border: 1px solid #fff; 
+    border: 1px solid #fff;
     &:hover {
       background: #fff;
       font-weight: 700;
