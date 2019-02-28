@@ -18,23 +18,26 @@ gem 'yukiusagi'
 
     $ bundle
 ## 使い方
-### CSSを適用する
+### CSSの適用とfont-awesomeの読み込み
 `application.scss`など適用したいファイルに以下を追加
 ```
-@import 'yukiusagi/yukiusagi';
-```
+@import "yukiusagi/yukiusagi";
+@import "yukiusagi/_yukiusagi_color";
+@import "font-awesome";
+ ```
 ### レイアウトファイルの作成
-以下を参考に編集してください。  
+以下を参考に編集してください。  
 [application.html.erbの編集例](https://github.com/eishis/yukiusagi/wiki/application.html.erb%E3%81%AE%E7%B7%A8%E9%9B%86%E4%BE%8B)
   
-  bodyタグのクラスを変えることでスタイルを変更できます。
+  bodyタグのクラスを変えることでスタイルを変更できます。
 
     <body class="yu-theme-default">（ピンク系：デフォルト）
 
     <body class="yu-theme-cool">（ブルー系）
 
 ### top, _header, _sidebarのhtml.erbファイルを生成
-top.html.erb, _header.html.erb, _sidebar.html.erbをviews/以下の指定ディレクトリに生成:
+top.html.erbをviews/以下の指定ディレクトリに  
+ _header.html.erb, _sidebar.html.erbを指定ディレクトリ/sharedに生成
 
     $ rails g yukiusagi:top { 指定ディレクトリ }
 
