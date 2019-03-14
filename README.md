@@ -22,7 +22,6 @@ gem 'yukiusagi'
 `application.scss`など適用したいファイルに以下を追加
 ```
 @import "yukiusagi/yukiusagi";
-@import "yukiusagi/_yukiusagi_color";
 @import "font-awesome";
  ```
 ### レイアウトファイルの作成
