@@ -18,6 +18,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "jquery-rails"
+  spec.add_dependency 'sassc-rails', '~> 2.1'
   spec.add_dependency "font-awesome-sass", "~> 5.6.1"
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
