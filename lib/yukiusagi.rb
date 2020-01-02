@@ -1,5 +1,5 @@
 require "yukiusagi/version"
-require "sass"
+require 'sassc-rails'
 
 module Yukiusagi
   Sass.load_paths << File.expand_path("../app/assets/stylesheets", __FILE__)
